@@ -10,9 +10,9 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-8 bg-gradient-to-b from-slate-900 to-slate-800">
+    <section id="skills" className="py-20 px-8 bg-black">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-16 text-center text-teal-400 glow-text">Technical Skills</h2>
+        <h2 className="text-4xl font-bold mb-16 text-center text-white">Technical Skills</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {skills.map((skill, index) => (
@@ -23,16 +23,16 @@ export const Skills = () => {
               transition={{ delay: index * 0.2 }}
               className="space-y-2"
             >
-              <div className="flex justify-between text-gray-300">
+              <div className="flex justify-between text-gray-400">
                 <span>{skill.name}</span>
                 <span>{skill.level}%</span>
               </div>
-              <div className="h-2 bg-slate-700 rounded-full">
+              <div className="h-2 bg-gray-700 rounded-full">
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.level}%` }}
                   transition={{ duration: 1 }}
-                  className="h-full bg-teal-400 rounded-full shadow-md shadow-teal-400/50"
+                  className="h-full bg-gray-400 rounded-full"
                 />
               </div>
             </motion.div>

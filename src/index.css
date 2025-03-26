@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-900 text-gray-100;
+  @apply bg-black text-white;
+}
+
+div#root {
+  position: relative;
+}
+
+.absolute, .fixed {
+  pointer-events: none; /* Allow scrolling through Three.js background */
+}
+
+.relative {
+  z-index: 10; /* Ensure content is above the background */
 }
 
 /* Custom scrollbar */
@@ -12,9 +24,9 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-800;
+  @apply bg-gray-800;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-teal-400 rounded-full;
+  @apply bg-gray-600 rounded-full;
 }

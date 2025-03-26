@@ -6,12 +6,12 @@ export const Navbar = () => (
   <motion.nav 
     initial={{ y: -100 }}
     animate={{ y: 0 }}
-    className="fixed w-full bg-slate-800/80 backdrop-blur-md z-40 shadow-md"
+    className="fixed w-full bg-black/80 backdrop-blur-md z-40"
   >
     <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
       <motion.span 
         whileHover={{ scale: 1.05 }}
-        className="text-teal-400 font-bold text-xl glow-text"
+        className="text-white font-bold text-xl"
       >
         HarshaM
       </motion.span>
@@ -21,8 +21,8 @@ export const Navbar = () => (
           <motion.a
             key={item.id}
             href={`#${item.id}`}
-            whileHover={{ scale: 1.1, color: '#2dd4bf' }}
-            className="hover:text-teal-400 transition-colors text-gray-300"
+            whileHover={{ scale: 1.1, color: '#ffffff' }}
+            className="hover:text-white transition-colors text-gray-400"
           >
             {item.title}
           </motion.a>
