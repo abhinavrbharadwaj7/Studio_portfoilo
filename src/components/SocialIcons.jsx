@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { SocialIcon } from 'react-social-icons';
 
 const socialLinks = [
-  { url: 'https://linkedin.com', bgColor: 'transparent', fgColor: '#2dd4bf' },
-  { url: 'https://vimeo.com', bgColor: 'transparent', fgColor: '#2dd4bf' },
-  { url: 'https://instagram.com', bgColor: 'transparent', fgColor: '#2dd4bf' },
+  { url: 'https://linkedin.com', bgColor: 'transparent', fgColor: '#9CA3AF' },  // gray-400
+  { url: 'https://vimeo.com', bgColor: 'transparent', fgColor: '#9CA3AF' },
+  { url: 'https://instagram.com', bgColor: 'transparent', fgColor: '#9CA3AF' },
 ];
 
 export const SocialIcons = () => (

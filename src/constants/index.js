@@ -10,40 +10,66 @@ export const navLinks = [
       id: 1,
       title: 'Yathabava',
       role: 'Cinematographer',
-      description: 'A bold narrative project showcasing visual storytelling',
+      description: 'Crafting cinematic excellence through innovative visual storytelling',
       link: '#',
       image: '/images/yathabava.jpg'
     },
-    // Add other projects
+    {
+      id: 2,
+      title: 'Samavarthi',
+      role: 'Associate cinematographer, lighting design, 2nd unit cinematographer',
+      description: 'Upcoming project, a collaboration with team Aarambham',
+      link: '#',
+      image: '/images/samavarthi.jpg'
+    },
+    {
+      id: 3,
+      title: 'Aarambham',
+      role: 'Associate cinematographer, 2nd unit cinematographer',
+      description: 'Crafting visual narratives through collaborative cinematography',
+      link: '#',
+      image: '/images/aarambham.jpg'
+    },
+    {
+      id: 4,
+      title: 'Home town',
+      role: 'Associate cinematographer, lighting chief, 2nd unit cinematographer',
+      description: 'Leading visual storytelling through multiple roles',
+      link: '#',
+      image: '/images/hometown.jpg'
+    },
+    {
+      id: 5,
+      title: 'Vindu bhojanam',
+      role: 'Assistant cinematographer',
+      description: 'Contributing to visual storytelling through cinematographic assistance',
+      link: '#',
+      image: '/images/vindubhojanam.jpg'
+    }
   ];
 
-export const commercials = [
-  {
-    id: 1,
-    title: "Brand Campaign",
-    role: "Director of Photography",
-    image: "/images/commercial1.jpg",
-    link: "#"
-  },
-  {
-    id: 2,
-    title: "Product Launch",
-    role: "Cinematographer",
-    image: "/images/commercial2.jpg",
-    link: "#"
-  },
-  {
-    id: 3,
-    title: "Corporate Film",
-    role: "Camera Operator",
-    image: "/images/commercial3.jpg",
-    link: "#"
-  },
-  {
-    id: 4,
-    title: "TV Commercial",
-    role: "Director of Photography",
-    image: "/images/commercial4.jpg",
-    link: "#"
-  }
-];
+  export const commercials = [
+    {
+      id: 1,
+      title: "Growwise ads",
+      role: "Cinematographer",
+      image: "/images/growwise.jpg",
+      link: "#"
+    },
+    {
+      id: 2,
+      title: "Care hospital",
+      role: "Lighting chief",
+      image: "/images/care-hospital.jpg",
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "Glance",
+      role: "Lighting chief",
+      image: "/images/glance.jpg",
+      link: "#"
+    },
+
+
+  ];

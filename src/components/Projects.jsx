@@ -34,12 +34,12 @@ export const Projects = () => (
             />
           </div>
           <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-          <p className="text-teal-400 mb-4">{project.role}</p>
+          <p className="text-white/80 mb-4">{project.role}</p>
           <p className="text-gray-400 mb-4">{project.description}</p>
           <motion.a
             whileHover={{ x: 5 }}
             href={project.link}
-            className="text-teal-400 flex items-center gap-2"
+            className="text-white flex items-center gap-2 hover:text-white/80"
           >
             View Project
             <ArrowRightIcon className="w-4 h-4" />

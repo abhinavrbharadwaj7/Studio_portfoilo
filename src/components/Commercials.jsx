@@ -42,11 +42,11 @@ export const Commercials = () => (
             
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-6 flex flex-col justify-end">
               <h3 className="text-xl font-bold mb-2">{commercial.title}</h3>
-              <p className="text-teal-400 text-sm mb-4">{commercial.role}</p>
+              <p className="text-white/80 text-sm mb-4">{commercial.role}</p>
               <motion.a
                 whileHover={{ x: 5 }}
                 href={commercial.link}
-                className="flex items-center gap-2 text-sm hover:text-teal-400"
+                className="flex items-center gap-2 text-sm text-white hover:text-white/80"
               >
                 View Case Study
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
