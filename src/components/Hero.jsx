@@ -4,27 +4,34 @@ import { TypeAnimation } from 'react-type-animation';
 
 export const Hero = () => (
   <section className="min-h-screen flex items-center justify-center px-8 bg-black">
-    <div className="text-center">
-      <motion.h1
+    <div className="text-center max-w-4xl mx-auto">
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-5xl font-bold mb-6 text-white"
+        className="mb-8"
       >
-        Visual Storyteller
-      </motion.h1>
+        <h2 className="text-2xl text-gray-400 mb-4">Hie filmmakers!!!</h2>
+        <h1 className="text-5xl font-bold mb-6 text-white">
+          I am Harsha Mallikarjuna
+        </h1>
+        <p className="text-xl text-gray-400">
+          A cinematographer trying to master art of visual story telling, 
+          a graduate from Annapurna studio.
+        </p>
+      </motion.div>
       
       <TypeAnimation
         sequence={[
-          'Painting with Light',
+          'Cinematography is painting with light and colours 📽',
+          3000,
+          'Crafting Emotions through Visual Poetry',
           2000,
-          'Crafting Emotions',
-          2000,
-          'Building Worlds',
+          'Building Worlds Frame by Frame',
           2000,
         ]}
         wrapper="div"
         speed={50}
-        className="text-3xl text-gray-400 mb-8"
+        className="text-3xl text-gray-400 mb-12"
         repeat={Infinity}
       />
 

@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-black text-white;
+:root {
+  --transition-duration: 200ms;
+}
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-black text-gray-900 dark:text-white;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
 }
 
 div#root {
@@ -11,11 +18,11 @@ div#root {
 }
 
 .absolute, .fixed {
-  pointer-events: none; /* Allow scrolling through Three.js background */
+  pointer-events: none;
 }
 
 .relative {
-  z-index: 10; /* Ensure content is above the background */
+  z-index: 10;
 }
 
 /* Custom scrollbar */
@@ -24,9 +31,15 @@ div#root {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-800;
+  @apply bg-gray-200 dark:bg-gray-800;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-600 rounded-full;
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+}
+
+.theme-transition {
+  transition: background-color var(--transition-duration), 
+              color var(--transition-duration), 
+              border-color var(--transition-duration);
 }
