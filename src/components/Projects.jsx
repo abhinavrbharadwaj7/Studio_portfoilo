@@ -24,9 +24,9 @@ export const Projects = () => (
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.2 }}
-          className="bg-slate-800 rounded-xl p-6 hover:bg-slate-700/50 transition-colors"
+          className="bg-black/40 rounded-xl p-6 hover:bg-black/60 transition-colors border border-white/10"
         >
-          <div className="h-48 bg-slate-600 rounded-lg mb-4 overflow-hidden">
+          <div className="h-48 bg-black rounded-lg mb-4 overflow-hidden">
             <img 
               src={project.image} 
               alt={project.title}

@@ -30,9 +30,9 @@ export const Commercials = () => (
           <motion.div
             key={commercial.id}
             variants={itemVariants}
-            className="w-full max-w-sm mx-auto group relative overflow-hidden rounded-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-300"
+            className="w-full max-w-sm mx-auto group relative overflow-hidden rounded-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-300 bg-black/40 border border-white/10"
           >
-            <div className="aspect-[4/3] bg-slate-800 overflow-hidden">
+            <div className="aspect-[4/3] bg-black overflow-hidden">
               <img
                 src={commercial.image}
                 alt={commercial.title}
@@ -40,7 +40,7 @@ export const Commercials = () => (
               />
             </div>
             
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 flex flex-col justify-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-6 flex flex-col justify-end">
               <h3 className="text-xl font-bold mb-2">{commercial.title}</h3>
               <p className="text-white/80 text-sm mb-4">{commercial.role}</p>
               <motion.a
