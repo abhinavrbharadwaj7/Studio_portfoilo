@@ -1,11 +1,11 @@
 export const navLinks = [
-    { id: 'projects', title: 'Projects' },
-    { id: 'commercials', title: 'Commercials' },
-    { id: 'skills', title: 'Skills' },
-    { id: 'contact', title: 'Contact' },
-  ];
-  
-  export const projects = [
+    { id: 'projects', title: 'Projects', icon: 'FilmIcon' },
+    { id: 'commercials', title: 'Commercials', icon: 'PlayIcon' },
+    { id: 'skills', title: 'Skills', icon: 'AcademicCapIcon' },
+    { id: 'contact', title: 'Contact', icon: 'EnvelopeIcon' },
+];
+
+export const projects = [
     {
       id: 1,
       title: 'Yathabava',
@@ -46,9 +46,9 @@ export const navLinks = [
       link: '#',
       image: '/images/vindubhojanam.jpg'
     }
-  ];
+];
 
-  export const commercials = [
+export const commercials = [
     {
       id: 1,
       title: "Growwise ads",
@@ -70,6 +70,4 @@ export const navLinks = [
       image: "/images/glance.jpg",
       link: "#"
     },
-
-
-  ];
+];

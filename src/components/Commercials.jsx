@@ -16,7 +16,7 @@ const itemVariants = {
 
 export const Commercials = () => (
   <section id="commercials" className="py-20 px-8">
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-6xl mx-auto">
       <h2 className="text-4xl font-bold mb-16 text-center">Commercial Work</h2>
       
       <motion.div
@@ -24,23 +24,23 @@ export const Commercials = () => (
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto"
       >
         {commercials.map((commercial) => (
           <motion.div
             key={commercial.id}
             variants={itemVariants}
-            className="group relative overflow-hidden rounded-xl hover:shadow-2xl hover:shadow-teal-400/20 transition-shadow"
+            className="w-full max-w-sm mx-auto group relative overflow-hidden rounded-xl hover:shadow-2xl hover:shadow-white/10 transition-all duration-300"
           >
-            <div className="h-64 bg-slate-800 overflow-hidden">
+            <div className="aspect-[4/3] bg-slate-800 overflow-hidden">
               <img
                 src={commercial.image}
                 alt={commercial.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-6 flex flex-col justify-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 flex flex-col justify-end">
               <h3 className="text-xl font-bold mb-2">{commercial.title}</h3>
               <p className="text-white/80 text-sm mb-4">{commercial.role}</p>
               <motion.a

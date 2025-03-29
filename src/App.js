@@ -2,7 +2,6 @@
 import { motion, useScroll } from 'framer-motion';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar, Hero, Projects, Commercials, Skills, Contact } from './components';
-import { ThreeBackground } from './components/ThreeBackground';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -10,7 +9,6 @@ function App() {
   return (
     <ThemeProvider>
       <div className="relative bg-black text-white min-h-screen">
-        <ThreeBackground />
         <motion.div
           className="fixed top-0 left-0 right-0 h-1 bg-white origin-left z-50"
           style={{ scaleX: scrollYProgress }}
